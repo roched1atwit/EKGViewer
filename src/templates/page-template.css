@@ -1,0 +1,53 @@
+html {
+    font-size: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+#page-header {
+    padding: 2.5vh 1vw;
+    border: solid;
+    border-width: 0 0 0.2vh 0;
+    background-color: #dddddd;
+}
+
+#header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#header-nav a {
+    margin: 0 1%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+section#content {
+    flex: 1 0 auto;
+}
+
+#page-footer {
+    flex-shrink: 0;
+    padding: 2.5vh 0;
+    border: solid;
+    border-width: 0.2vh 0 0 0;
+    background-color: #dddddd;
+}
+
+#page-footer small {
+    margin-left: 1vw;
+    font-size: 0.75rem;
+}
+
+#footer-nav {
+    display: flex;
+}
+
+#footer-nav ul {
+    margin: 0 1vw;
+}
