@@ -10,8 +10,10 @@
     padding: 2.5vh 1vw;
     border: solid;
     border-width: 0 0 0.2vh 0;
-    background-color: #dddddd;
+    border-color: #000000;
+    background-color: #1167b1;
     font-size: 1.25rem;
+    color: #ffffff;
 }
 
 #page-header h1 {
