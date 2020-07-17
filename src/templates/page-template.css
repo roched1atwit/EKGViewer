@@ -7,25 +7,35 @@ html, body {
     height: 100%;
 }
 
-nav a {
+#page-header a, nav a {
     text-decoration: none;
     color: inherit;
 }
 
 #page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 2.5vh 1vw;
     border: solid;
     border-width: 0 0 0.2vh 0;
     background-color: #dddddd;
+    font-size: 1.25rem;
+}
+
+#page-header h1 {
+    font-size: 2rem;
+    margin-left: 1vw;
 }
 
 #header-nav {
     display: flex;
     justify-content: flex-end;
+    width: 50%;
 }
 
 #header-nav a {
-    margin: 0 1%;
+    margin: 0 1vw;
 }
 
 body {
