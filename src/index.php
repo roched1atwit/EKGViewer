@@ -3,9 +3,9 @@
 
 <head>
     <title>Welcome to EKGViewer</title>
-    <link href="reset.css" rel="stylesheet" />
-    <link href="./templates/page-template.css" rel="stylesheet" />
-    <link href="index.css" rel="stylesheet" />
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./templates/css/page-template.css" rel="stylesheet" />
+    <link href="./css/index.css" rel="stylesheet" />
 </head>
 
 <body>
