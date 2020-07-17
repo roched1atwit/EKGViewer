@@ -1,9 +1,15 @@
 html {
     font-size: 100%;
+    color: #3f3f3f;
 }
 
 html, body {
     height: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #page-header {
@@ -32,22 +38,42 @@ section#content {
 }
 
 #page-footer {
+    display: flex;
+    flex-direction: column;
     flex-shrink: 0;
-    padding: 2.5vh 0;
+    padding: 2.5vh 1vw;
     border: solid;
     border-width: 0.2vh 0 0 0;
     background-color: #dddddd;
 }
 
+#page-footer h6 {
+    font-size: 1.1rem;
+}
+
 #page-footer small {
-    margin-left: 1vw;
     font-size: 0.75rem;
+    align-self: center;
 }
 
 #footer-nav {
     display: flex;
+    align-self: center;
+    margin-bottom: 1.5vh;
+    padding-bottom: 1.5vh;
+    border-style: solid;
+    border-color: #cccccc;
+    border-bottom-width: 0.2vh;
 }
 
-#footer-nav ul {
-    margin: 0 1vw;
+#footer-nav div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2vw;
+}
+
+#footer-nav h6 {
+    margin-bottom: 1.5vh;
+    text-decoration: underline;
+    text-decoration-color: #bbbbbb;
 }
