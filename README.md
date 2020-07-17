@@ -39,7 +39,7 @@ End with an example of getting some data out of the system or using it for a lit
 * **Dan Roche** - How to Place and Test Results Pages - GITHUB HERE
 * **Hunter Wintle** - Home, How to Interpret, and Test Pages - [wintleh](https://github.com/wintleh)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/wintleh/EKGViewer/contributors) who participated in this project.
 
 ---
 Created for Web Development (COMP-4650) at Wentworth Institue of Technology - Summer 2020
