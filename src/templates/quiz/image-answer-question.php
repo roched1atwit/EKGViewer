@@ -19,7 +19,7 @@ class ImageAnswerQuestion
         for ($i = 0; $i < count($this->_answers); $i++) 
         {
             echo "<div class='answer-wrapper'>";
-            echo "<input type='radio' name='question" . $this->_questionNum . "' id='" . $this->_questionNum . $i . "'>";
+            echo "<input type='radio' name='question" . $this->_questionNum . "' id='" . $this->_questionNum . $i . "' value='" . $this->_answers[$i]->getHeaderText() . "'>";
             echo "<label for='" . $this->_questionNum . $i . "'>";
             echo "<article>";
             echo "<header>";
