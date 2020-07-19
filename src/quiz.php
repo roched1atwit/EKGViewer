@@ -13,12 +13,13 @@ include "./templates/quiz/image-answer-question.php";
     <link href="./css/reset.css" rel="stylesheet" />
     <link href="./templates/css/page-template.css" rel="stylesheet" />
     <link href="./css/quiz.css" rel="stylesheet" />
+    <script type="text/javascript" src="./js/quiz.js"></script>
 </head>
 
 <body>
     <?php include "./templates/page-header.php" ?>
     <section id="content-wrapper">
-        <form method="POST" action="">
+        <form method="POST" action="" id="quiz-form">
             <?php
             (new TextAnswerQuestion(
                 "1",
@@ -103,6 +104,7 @@ include "./templates/quiz/image-answer-question.php";
             ?>
             <input type="submit" value="Submit" class="form-button">
             <input type="reset" value="Clear" class="form-button">
+            <h2 id="submission-error-message"></h2>
         </form>
     </section>
     <?php include "./templates/page-footer.php" ?>

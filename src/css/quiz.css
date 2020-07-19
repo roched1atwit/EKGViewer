@@ -11,6 +11,13 @@
     border-width: 0.1rem 0;
 }
 
+
+#content-wrapper h1.invalid {
+    box-shadow: 0rem 0rem 0.4rem rgba(255, 0, 0, 0.6);
+    background-color: rgba(255, 0, 0, 0.3);
+    color: #111111;
+}
+
 #content-wrapper h2 {
     font-size: 1.4rem;
 }
@@ -79,4 +86,10 @@ form {
 
 .form-button:hover {
     box-shadow: 0rem 0rem 0.3rem #000000;
+}
+
+#submission-error-message {
+    align-self: center;
+    margin-top: 2vh;
+    color: #ff0000;
 }
