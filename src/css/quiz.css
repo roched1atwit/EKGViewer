@@ -20,13 +20,10 @@ form {
     flex-direction: column;
 }
 
-article, input {
-    cursor: pointer;
-}
-
-section.question-wrapper {
+.question-wrapper {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-bottom: 3vh;
 }
 
@@ -34,14 +31,20 @@ section.question-wrapper {
     display: flex;
 }
 
-article {
+.answer-wrapper article {
     margin: 2vh 0;
     border: 0.1rem solid #000000;
     border-radius: 0.5rem;
     overflow: hidden;
+    box-shadow: 0rem 0rem 0.2rem;
+    cursor: pointer;
 }
 
-article header {
+.answer-wrapper article:hover {
+    box-shadow: 0rem 0rem 0.4rem;
+}
+
+.answer-wrapper article header {
     color: #ffffff;
     background-color: #1167b1;
     border: solid #000000;
@@ -50,15 +53,15 @@ article header {
     text-align: center;
 }
 
-article figure {
+.answer-wrapper article figure {
     padding: 1vh 1vw;
 }
 
-article figcaption {
+.answer-wrapper article figcaption {
     padding: 1vh 0;
 }
 
-article p {
+.answer-wrapper article p {
     padding: 1vh 1vw;
 }
 
@@ -66,9 +69,14 @@ article p {
     font-size: 2rem;
     background-color: #1167b1;
     border: solid #000000;
-    border-width: 0.1rem 0;
+    border-width: 0.1rem;
     border-radius: 0.5rem;
     color: #ffffff;
     padding: 1vh 1vw;
     margin: 1vh 40vw;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    box-shadow: 0rem 0rem 0.3rem #000000;
 }
