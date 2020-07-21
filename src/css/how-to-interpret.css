@@ -26,7 +26,7 @@ section.signal-type-wrapper {
     margin-bottom: 3vh;
 }
 
-article {
+.rhythm-info {
     margin: 2vh 0;
     border: 0.1rem solid #000000;
     border-radius: 0.5rem;
@@ -36,7 +36,7 @@ article {
     flex-direction: column;
 }
 
-article header {
+.rhythm-info header {
     color: #ffffff;
     background-color: #1167b1;
     border: solid #000000;
@@ -45,18 +45,27 @@ article header {
     text-align: center;
 }
 
-article figure {
+.rhythm-info figure {
     padding: 3vh 1vw;
 }
 
-article img {
+.rhythm-info img {
     display: block;
     margin: auto;
 }
 
-article figcaption {
+.rhythm-info figcaption {
     padding: 1vh 0;
-    width: 80%;
-    display: block;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.rhythm-info p {
+    max-width: 80%;
+}
+
+p.citation {
+    padding: 3vh 2vw;
+    font-size: 1.2rem;
+    text-align: center;
 }

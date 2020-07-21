@@ -15,56 +15,85 @@ include "./templates/how-to-interpret/ekg-rhythm-info.php";
 <body>
     <?php include "./templates/page-header.php" ?>
     <section id="content-wrapper">
-        <h1>SIGNAL CATEGORY</h1>
+        <h1>Sinus Rhythms</h1>
         <section class="signal-type-wrapper">
             <?php
             (new EkgRhythmInfo(
-                "RHYTHM TYPE",
+                "Normal Sinus Rhythms",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
                 "signal type name",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "60-100 bpm",
+                "Regular",
+                "Normal and proceeds each QRS complex (smooth and rounded)",
+                "0.12-0.20 seconds",
+                "<= 0.12 seconds",
             ))->output();
             (new EkgRhythmInfo(
-                "RHYTHM TYPE",
+                "Sinus Bradycardia",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
                 "signal type name",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "< 60 bpm",
+                "Regular",
+                "Normal and proceeds each QRS complex (smooth and rounded)",
+                "0.12-0.20 seconds",
+                "<= 0.12 seconds, generally",
             ))->output();
             ?>
         </section>
-        <h1>SIGNAL CATEGORY</h1>
+        <h1>Artial Rhythms</h1>
         <section class="signal-type-wrapper">
             <?php
             (new EkgRhythmInfo(
-                "RHYTHM TYPE",
+                "Premature Atrial Complexes",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
                 "signal type name",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Generally normal but varies because of underlying rhythm",
+                "Regular with premature beats",
+                "Premature and differ in shape from sinus wave",
+                "0.12-0.20 seconds when the impulse originates near SA node; 0.12 seconds when the impulse originates near AV junction",
+                "Generally <= 0.12 seconds but may be prolonged if the rhythm is abnormally conducted",
             ))->output();
             (new EkgRhythmInfo(
-                "RHYTHM TYPE",
+                "Atrial Flutter",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
                 "signal type name",
-                "",
-                "",
-                "",
-                "",
-                "",
+                "Atrial rate 200-350 bpm; ventricular rate will vary based on the number of blocked atrial beats but usually is not > 180 bpm",
+                "Atrial regular; ventricular may be regular or irregular",
+                "Not visible, sawtootch pattern or flutter observable",
+                "Not measurable",
+                "QRS complex: Generally < 0.12 seconds but may be wider if ventricular conduction problem exists",
             ))->output();
             ?>
         </section>
+        <h1>Ventricular Rhythms</h1>
+        <section class="signal-type-wrapper">
+            <?php
+            (new EkgRhythmInfo(
+                "Idioventricular Rhythm",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
+                "signal type name",
+                "Ventricular rate 20-40 bpm",
+                "Usually regular; atrial not visible",
+                "None",
+                "None",
+                "> 0.12 seconds; T wave is in the opposite direction of the QRS complex",
+            ))->output();
+            (new EkgRhythmInfo(
+                "Asystole",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
+                "signal type name",
+                "Not discernible",
+                "Not discernible",
+                "Not discernible",
+                "Not measurable",
+                "None",
+            ))->output();
+            ?>
+        </section>
+        <h1>Works Cited</h1>
+        <p class="citation">
+        EKGs. BarCharts, Inc., 2012. EBSCOhost, search.ebscohost.com/login.aspx?direct=true&db=cat05470a&AN=wit.2359116&site=eds-live&scope=site.
+        </p>
     </section>
     <?php include "./templates/page-footer.php" ?>
 </body>
