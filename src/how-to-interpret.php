@@ -20,7 +20,7 @@ include "./templates/how-to-interpret/ekg-rhythm-info.php";
             <?php
             (new EkgRhythmInfo(
                 "Normal Sinus Rhythms",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
+                "./img/normal-sinus-rhythm.png",
                 "signal type name",
                 "60-100 bpm",
                 "Regular",
@@ -30,7 +30,7 @@ include "./templates/how-to-interpret/ekg-rhythm-info.php";
             ))->output();
             (new EkgRhythmInfo(
                 "Sinus Bradycardia",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
+                "./img/sinus-bradycardia.png",
                 "signal type name",
                 "< 60 bpm",
                 "Regular",
@@ -45,7 +45,7 @@ include "./templates/how-to-interpret/ekg-rhythm-info.php";
             <?php
             (new EkgRhythmInfo(
                 "Premature Atrial Complexes",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
+                "./img/premature-atrial-complexes.png",
                 "signal type name",
                 "Generally normal but varies because of underlying rhythm",
                 "Regular with premature beats",
@@ -55,7 +55,7 @@ include "./templates/how-to-interpret/ekg-rhythm-info.php";
             ))->output();
             (new EkgRhythmInfo(
                 "Atrial Flutter",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
+                "./img/atrial-flutter.png",
                 "signal type name",
                 "Atrial rate 200-350 bpm; ventricular rate will vary based on the number of blocked atrial beats but usually is not > 180 bpm",
                 "Atrial regular; ventricular may be regular or irregular",
@@ -70,7 +70,7 @@ include "./templates/how-to-interpret/ekg-rhythm-info.php";
             <?php
             (new EkgRhythmInfo(
                 "Idioventricular Rhythm",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
+                "./img/idioventricular-rhythm.png",
                 "signal type name",
                 "Ventricular rate 20-40 bpm",
                 "Usually regular; atrial not visible",
@@ -80,7 +80,7 @@ include "./templates/how-to-interpret/ekg-rhythm-info.php";
             ))->output();
             (new EkgRhythmInfo(
                 "Asystole",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
+                "./img/asystole.png",
                 "signal type name",
                 "Not discernible",
                 "Not discernible",
@@ -92,7 +92,7 @@ include "./templates/how-to-interpret/ekg-rhythm-info.php";
         </section>
         <h1>Works Cited</h1>
         <p class="citation">
-        EKGs. BarCharts, Inc., 2012. EBSCOhost, search.ebscohost.com/login.aspx?direct=true&db=cat05470a&AN=wit.2359116&site=eds-live&scope=site.
+            EKGs. BarCharts, Inc., 2012. EBSCOhost, search.ebscohost.com/login.aspx?direct=true&db=cat05470a&AN=wit.2359116&site=eds-live&scope=site.
         </p>
     </section>
     <?php include "./templates/page-footer.php" ?>
