@@ -1,3 +1,7 @@
+<?php
+include "./templates/how-to-interpret/ekg-rhythm-info.php";
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -13,121 +17,53 @@
     <section id="content-wrapper">
         <h1>SIGNAL CATEGORY</h1>
         <section class="signal-type-wrapper">
-            <article>
-                <header>
-                    <h2>SIGNAL TYPE</h2>
-                </header>
-                <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png" alt="signal type name">
-                    <figcaption>
-                        EXPLAIN WAVE FORM
-                    </figcaption>
-                </figure>
-                <p>
-                    MORE INFO ABOUT SIGNAL
-                </p>
-            </article>
-            <article>
-                <header>
-                    <h2>SIGNAL TYPE</h2>
-                </header>
-                <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png" alt="signal type name">
-                    <figcaption>
-                        EXPLAIN WAVE FORM
-                    </figcaption>
-                </figure>
-                <p>
-                    MORE INFO ABOUT SIGNAL
-                </p>
-            </article>
-            <article>
-                <header>
-                    <h2>SIGNAL TYPE</h2>
-                </header>
-                <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png" alt="signal type name">
-                    <figcaption>
-                        EXPLAIN WAVE FORM
-                    </figcaption>
-                </figure>
-                <p>
-                    MORE INFO ABOUT SIGNAL
-                </p>
-            </article>
-            <article>
-                <header>
-                    <h2>SIGNAL TYPE</h2>
-                </header>
-                <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png" alt="signal type name">
-                    <figcaption>
-                        EXPLAIN WAVE FORM
-                    </figcaption>
-                </figure>
-                <p>
-                    MORE INFO ABOUT SIGNAL
-                </p>
-            </article>
+            <?php
+            (new EkgRhythmInfo(
+                "RHYTHM TYPE",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
+                "signal type name",
+                "",
+                "",
+                "",
+                "",
+                "",
+            ))->output();
+            (new EkgRhythmInfo(
+                "RHYTHM TYPE",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
+                "signal type name",
+                "",
+                "",
+                "",
+                "",
+                "",
+            ))->output();
+            ?>
         </section>
         <h1>SIGNAL CATEGORY</h1>
         <section class="signal-type-wrapper">
-            <article>
-                <header>
-                    <h2>SIGNAL TYPE</h2>
-                </header>
-                <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png" alt="signal type name">
-                    <figcaption>
-                        EXPLAIN WAVE FORM
-                    </figcaption>
-                </figure>
-                <p>
-                    MORE INFO ABOUT SIGNAL
-                </p>
-            </article>
-            <article>
-                <header>
-                    <h2>SIGNAL TYPE</h2>
-                </header>
-                <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png" alt="signal type name">
-                    <figcaption>
-                        EXPLAIN WAVE FORM
-                    </figcaption>
-                </figure>
-                <p>
-                    MORE INFO ABOUT SIGNAL
-                </p>
-            </article>
-            <article>
-                <header>
-                    <h2>SIGNAL TYPE</h2>
-                </header>
-                <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png" alt="signal type name">
-                    <figcaption>
-                        EXPLAIN WAVE FORM
-                    </figcaption>
-                </figure>
-                <p>
-                    MORE INFO ABOUT SIGNAL
-                </p>
-            </article>
-            <article>
-                <header>
-                    <h2>SIGNAL TYPE</h2>
-                </header>
-                <figure>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png" alt="signal type name">
-                    <figcaption>
-                        EXPLAIN WAVE FORM
-                    </figcaption>
-                </figure>
-                <p>
-                    MORE INFO ABOUT SIGNAL
-                </p>
-            </article>
+            <?php
+            (new EkgRhythmInfo(
+                "RHYTHM TYPE",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
+                "signal type name",
+                "",
+                "",
+                "",
+                "",
+                "",
+            ))->output();
+            (new EkgRhythmInfo(
+                "RHYTHM TYPE",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
+                "signal type name",
+                "",
+                "",
+                "",
+                "",
+                "",
+            ))->output();
+            ?>
         </section>
     </section>
     <?php include "./templates/page-footer.php" ?>
