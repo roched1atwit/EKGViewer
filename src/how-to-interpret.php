@@ -21,7 +21,7 @@ include "./templates/how-to-interpret/ekg-rhythm-info.php";
             (new EkgRhythmInfo(
                 "Normal Sinus Rhythms",
                 "./img/normal-sinus-rhythm.png",
-                "signal type name",
+                "Normal sinus rhythm trace",
                 "60-100 bpm",
                 "Regular",
                 "Normal and proceeds each QRS complex (smooth and rounded)",
@@ -31,7 +31,7 @@ include "./templates/how-to-interpret/ekg-rhythm-info.php";
             (new EkgRhythmInfo(
                 "Sinus Bradycardia",
                 "./img/sinus-bradycardia.png",
-                "signal type name",
+                "Sinus bradycardia trace",
                 "< 60 bpm",
                 "Regular",
                 "Normal and proceeds each QRS complex (smooth and rounded)",
@@ -46,7 +46,7 @@ include "./templates/how-to-interpret/ekg-rhythm-info.php";
             (new EkgRhythmInfo(
                 "Premature Atrial Complexes",
                 "./img/premature-atrial-complexes.png",
-                "signal type name",
+                "Premature atrial complexes trace",
                 "Generally normal but varies because of underlying rhythm",
                 "Regular with premature beats",
                 "Premature and differ in shape from sinus wave",
@@ -56,7 +56,7 @@ include "./templates/how-to-interpret/ekg-rhythm-info.php";
             (new EkgRhythmInfo(
                 "Atrial Flutter",
                 "./img/atrial-flutter.png",
-                "signal type name",
+                "Atrial flutter trace",
                 "Atrial rate 200-350 bpm; ventricular rate will vary based on the number of blocked atrial beats but usually is not > 180 bpm",
                 "Atrial regular; ventricular may be regular or irregular",
                 "Not visible, sawtootch pattern or flutter observable",
@@ -71,7 +71,7 @@ include "./templates/how-to-interpret/ekg-rhythm-info.php";
             (new EkgRhythmInfo(
                 "Idioventricular Rhythm",
                 "./img/idioventricular-rhythm.png",
-                "signal type name",
+                "Idioventricular rhythm trace",
                 "Ventricular rate 20-40 bpm",
                 "Usually regular; atrial not visible",
                 "None",
@@ -81,7 +81,7 @@ include "./templates/how-to-interpret/ekg-rhythm-info.php";
             (new EkgRhythmInfo(
                 "Asystole",
                 "./img/asystole.png",
-                "signal type name",
+                "Asystole trace",
                 "Not discernible",
                 "Not discernible",
                 "Not discernible",
