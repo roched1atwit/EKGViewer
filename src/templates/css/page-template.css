@@ -1,0 +1,22 @@
+html {
+    font-size: 100%;
+    color: #3f3f3f;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+section#content-wrapper {
+    flex: 1 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
