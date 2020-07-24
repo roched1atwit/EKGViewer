@@ -5,33 +5,46 @@ An online platform for learning about EKG.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+#### Suggested Setup:
 
-```
-Give examples
-```
+##### 1. Install XAMPP
+- Download the XAMPP installer [here](https://www.apachefriends.org/download.html)
+- Run the installer and follow all steps.
+    - **Note**: Make sure that the MySQL component is selected on the components page of the installer. Also, make note of the folder where XAMPP is installed.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+#### 1. Clone the Repo
+- Clone this repo to the htdocs folder in the XAMPP installation folder.
+    - On Windows, the default path to the htdocs folder is ```C:\xampp\htdocs```
+ 
+#### 2. Setup the Database
+- Open the XAMPP Control Panel and start both the Apache and MySQL services.
 
-Say what the step will be
+- In your browser, navigate to ```http://localhost/phpmyadmin/```. 
 
-```
-Give the example
-```
+- First, select the "User accounts" tab at the top of the page. Click the "Add user account" link near the middle of the page.
 
-And repeat
+- Create a user with the username "EKGViewer" and password "wit123", and select all data privileges for this user. Click the "go" button in the bottom right corner of the page to create this user.
+    
+- Next, click the New button on the left side of the page to create a new database. Name this database ```ekg_viewer``` and then click "create".
 
-```
-until finished
-```
+- Select the "SQL" tab on the top of the page. 
+    
+- In the text box, paste the SQL commands from the file ```setup-db.sql``` (find this file in the root of this repo). Click the "go" button in the bottom right of the page to execute these queries.
 
-End with an example of getting some data out of the system or using it for a little demo
+- On the top of the page, select the "Structure" tab, and verify that there are three tables: quiz_answer, quiz_category, and quiz_question.
+
+#### 3. Verify installation
+- Finally, navigate to ```http://localhost/EKGViewer/src/quiz.php``` in your browser. 
+  
+- If there are questions and answers appearing on the page, then everything is setup correctly. Refresh the page to generate new questions. 
+  
+- If there are any errors return to steps 1 and 2 and verify that the repo was cloned to the correct directory and the database was setup correctly. If there are still issues after that, verify your XAMPP installation.
 
 ## Authors
 
