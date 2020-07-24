@@ -20,34 +20,34 @@ include_once "./db/quiz.php";
 <body>
     <?php include "./templates/page-header.php" ?>
     <section id="content-wrapper">
-        <form method="POST" action="" id="quiz-form">
-            <?php
-            $quiz = new Quiz();
+        <?php
+        $quiz = new Quiz();
 
-            $historyQuestion = $quiz->getHistoryQuestion(1);
-            if ($historyQuestion != null) {
-                $historyQuestion->output();
-            }
+        $historyQuestion    = $quiz->getHistoryQuestion(1);
+        $definitionQuestion = $quiz->getDefinitionQuestion(2);
+        $placeQuestion      = $quiz->getPlaceQuestion(3);
+        $interpretQuestion  = $quiz->getInterpretQuestion(4);
 
-            $definitionQuestion = $quiz->getDefinitionQuestion(2);
-            if ($definitionQuestion != null) {
-                $definitionQuestion->output();
-            }
-
-            $placeQuestion = $quiz->getPlaceQuestion(3);
-            if ($placeQuestion != null) {
-                $placeQuestion->output();
-            }
-
-            $interpretQuestion = $quiz->getInterpretQuestion(4);
-            if ($interpretQuestion != null) {
-                $interpretQuestion->output();
-            }
-            ?>
-            <input type="submit" value="Submit" class="form-button">
-            <input type="reset" value="Clear" class="form-button">
-            <h2 id="submission-error-message"></h2>
-        </form>
+        // Ensure that all questions were generated successfully
+        if (
+            $historyQuestion    != null &&
+            $definitionQuestion != null &&
+            $placeQuestion      != null &&
+            $interpretQuestion  != null
+        ) {
+            echo "<form method='POST' action='' id='quiz-form'>";
+            $historyQuestion->output();
+            $definitionQuestion->output();
+            $placeQuestion->output();
+            $interpretQuestion->output();
+            echo "<input type='submit' value='Submit' class='form-button'>";
+            echo "<input type='reset' value='Clear' class='form-button'>";
+            echo "<h2 id='submission-error-message'></h2>";
+            echo "</form>";
+        } else {
+            echo "<h1>Error loading questions: Please try again later</h1>";
+        }
+        ?>
     </section>
     <?php include "./templates/page-footer.php" ?>
 </body>
