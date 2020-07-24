@@ -1,5 +1,5 @@
 <?php
-    include_once("./db/database.php");
+    include_once "./db/database.php";
     include_once "./templates/quiz/text-answer-data.php";
     include_once "./templates/quiz/text-answer-question.php";
     include_once "./templates/quiz/image-answer-data.php";
@@ -46,12 +46,10 @@
                     new ImageAnswerData(
                         $char++,
                         "./img/" . $quizAnswers[$i]["answer"] . ".png",
-                        $quizAnswers[$i]["answerID"],
-                        ""
+                        $quizAnswers[$i]["answerID"]
                     )
                 );
             }
-
             return $answerDataObjs;
         }
 
@@ -69,7 +67,6 @@
                     )
                 );
             }
-
             return $answerDataObjs;
         }
 
@@ -101,7 +98,7 @@
 
                     // TODO: Randomly mix up answers
                     // Sort the answers, makes sure the correct answer isn't always at the first index
-                    array_multisort($quizAnswers);
+                    shuffle($quizAnswers);
 
                     if ($questionType == "img") 
                     {
