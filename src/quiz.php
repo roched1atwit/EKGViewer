@@ -49,25 +49,21 @@ include "./templates/quiz/image-answer-question.php";
                         "A",
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
                         "IMG ALT",
-                        "EXPLAIN WAVE FORM"
                     ),
                     new ImageAnswerData(
                         "B",
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
                         "IMG ALT",
-                        "EXPLAIN WAVE FORM"
                     ),
                     new ImageAnswerData(
                         "C",
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
                         "IMG ALT",
-                        "EXPLAIN WAVE FORM"
                     ),
                     new ImageAnswerData(
                         "D",
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
                         "IMG ALT",
-                        "EXPLAIN WAVE FORM"
                     )
                 )
             ))->output();
@@ -79,25 +75,21 @@ include "./templates/quiz/image-answer-question.php";
                         "A",
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
                         "IMG ALT",
-                        "EXPLAIN WAVE FORM"
                     ),
                     new ImageAnswerData(
                         "B",
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
                         "IMG ALT",
-                        "EXPLAIN WAVE FORM"
                     ),
                     new ImageAnswerData(
                         "C",
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
                         "IMG ALT",
-                        "EXPLAIN WAVE FORM"
                     ),
                     new ImageAnswerData(
                         "D",
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
                         "IMG ALT",
-                        "EXPLAIN WAVE FORM"
                     )
                 )
             ))->output();

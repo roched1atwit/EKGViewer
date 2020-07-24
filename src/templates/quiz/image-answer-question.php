@@ -27,7 +27,6 @@ class ImageAnswerQuestion
             echo "</header>";
             echo "<figure>";
             echo "<img src='" . $this->_answers[$i]->getImgPath() . "' alt='" . $this->_answers[$i]->getImgAlt() . "'>";
-            echo "<figcaption>" . $this->_answers[$i]->getAnswerText() . "</figcaption>";
             echo "</figure>";
             echo "</article>";
             echo "</label>";
