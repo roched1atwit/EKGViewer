@@ -1,8 +1,9 @@
 <?php
-include "./templates/quiz/text-answer-data.php";
-include "./templates/quiz/text-answer-question.php";
-include "./templates/quiz/image-answer-data.php";
-include "./templates/quiz/image-answer-question.php";
+include_once "./templates/quiz/text-answer-data.php";
+include_once "./templates/quiz/text-answer-question.php";
+include_once "./templates/quiz/image-answer-data.php";
+include_once "./templates/quiz/image-answer-question.php";
+include_once "./db/quiz.php";
 ?>
 
 <!DOCTYPE html>
@@ -21,78 +22,27 @@ include "./templates/quiz/image-answer-question.php";
     <section id="content-wrapper">
         <form method="POST" action="" id="quiz-form">
             <?php
-            (new TextAnswerQuestion(
-                "1",
-                "History Question",
-                array(
-                    new TextAnswerData("A", "ANSWER A"),
-                    new TextAnswerData("B", "ANSWER B"),
-                    new TextAnswerData("C", "ANSWER C"),
-                    new TextAnswerData("D", "ANSWER D")
-                )
-            ))->output();
-            (new TextAnswerQuestion(
-                "2",
-                "Definition Question",
-                array(
-                    new TextAnswerData("A", "ANSWER A"),
-                    new TextAnswerData("B", "ANSWER B"),
-                    new TextAnswerData("C", "ANSWER C"),
-                    new TextAnswerData("D", "ANSWER D")
-                )
-            ))->output();
-            (new ImageAnswerQuestion(
-                "3",
-                "How To Place Question",
-                array(
-                    new ImageAnswerData(
-                        "A",
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
-                        "IMG ALT",
-                    ),
-                    new ImageAnswerData(
-                        "B",
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
-                        "IMG ALT",
-                    ),
-                    new ImageAnswerData(
-                        "C",
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
-                        "IMG ALT",
-                    ),
-                    new ImageAnswerData(
-                        "D",
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
-                        "IMG ALT",
-                    )
-                )
-            ))->output();
-            (new ImageAnswerQuestion(
-                "4",
-                "Which is an example of WAVE FORM?",
-                array(
-                    new ImageAnswerData(
-                        "A",
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
-                        "IMG ALT",
-                    ),
-                    new ImageAnswerData(
-                        "B",
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
-                        "IMG ALT",
-                    ),
-                    new ImageAnswerData(
-                        "C",
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
-                        "IMG ALT",
-                    ),
-                    new ImageAnswerData(
-                        "D",
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
-                        "IMG ALT",
-                    )
-                )
-            ))->output();
+            $quiz = new Quiz();
+
+            $historyQuestion = $quiz->getHistoryQuestion(1);
+            if ($historyQuestion != null) {
+                $historyQuestion->output();
+            }
+
+            $definitionQuestion = $quiz->getDefinitionQuestion(2);
+            if ($definitionQuestion != null) {
+                $definitionQuestion->output();
+            }
+
+            $placeQuestion = $quiz->getPlaceQuestion(3);
+            if ($placeQuestion != null) {
+                $placeQuestion->output();
+            }
+            
+            $interpretQuestion = $quiz->getInterpretQuestion(4);
+            if ($interpretQuestion != null) {
+                $interpretQuestion->output();
+            }
             ?>
             <input type="submit" value="Submit" class="form-button">
             <input type="reset" value="Clear" class="form-button">

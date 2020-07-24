@@ -36,10 +36,11 @@ form {
 
 .answer-wrapper {
     display: flex;
+    margin: 0 2vw;
 }
 
 .answer-wrapper article {
-    margin: 2vh 0;
+    margin: 2vh 1vw;
     border: 0.1rem solid #000000;
     border-radius: 0.5rem;
     overflow: hidden;
@@ -62,6 +63,11 @@ form {
 
 .answer-wrapper article figure {
     padding: 1vh 1vw;
+}
+
+.answer-wrapper article img {
+    width: 100%;
+    height: auto;
 }
 
 .answer-wrapper article p {
