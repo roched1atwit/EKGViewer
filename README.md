@@ -49,8 +49,8 @@ These instructions will get you a copy of the project up and running on your loc
 ## Authors
 
 * **Anthony Morganelli** - Definitions and History Pages - GITHUB HERE
-* **Dan Roche** - How to Place and Test Results Pages - GITHUB HERE
-* **Hunter Wintle** - Home, How to Interpret, and Test Pages - [wintleh](https://github.com/wintleh)
+* **Dan Roche** - How to Place and Quiz Results Pages - GITHUB HERE
+* **Hunter Wintle** - Home, How to Interpret, and Quiz Pages - [wintleh](https://github.com/wintleh)
 
 See also the list of [contributors](https://github.com/wintleh/EKGViewer/contributors) who participated in this project.
 
