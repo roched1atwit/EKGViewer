@@ -35,7 +35,7 @@ include_once "./db/quiz.php";
             $placeQuestion      != null &&
             $interpretQuestion  != null
         ) {
-            echo "<form method='POST' action='' id='quiz-form'>";
+            echo "<form method='POST' action='./results.php' id='quiz-form'>";
             $historyQuestion->output();
             $definitionQuestion->output();
             $placeQuestion->output();
