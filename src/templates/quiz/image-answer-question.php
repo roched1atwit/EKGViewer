@@ -1,12 +1,14 @@
 <?php
 class ImageAnswerQuestion
 {
+    private $_questionId;
     private $_questionNum;
     private $_questionText;
     private $_answers;
 
-    function __construct($questionNum, $questionText, $answers)
+    function __construct($questionId, $questionNum, $questionText, $answers)
     {
+        $this->_questionId = $questionId;
         $this->_questionNum = $questionNum;
         $this->_questionText = $questionText;
         $this->_answers = $answers;
@@ -18,9 +20,12 @@ class ImageAnswerQuestion
         echo "<section class='question-wrapper'>";
         for ($i = 0; $i < count($this->_answers); $i++) 
         {
+            // Used to link the radio button and the label
+            $uid = $this->_questionId . "-" . $this->_answers[$i]->getAnswerId();
+
             echo "<div class='answer-wrapper'>";
-            echo "<input type='radio' name='question" . $this->_questionNum . "' id='" . $this->_questionNum . $i . "' value='" . $this->_answers[$i]->getHeaderText() . "'>";
-            echo "<label for='" . $this->_questionNum . $i . "'>";
+            echo "<input type='radio' name='" . $this->_questionId . "' id='" . $uid . "' value='" . $this->_answers[$i]->getAnswerId() . "'>";
+            echo "<label for='" . $uid . "'>";
             echo "<article>";
             echo "<header>";
             echo "<h2>" . $this->_answers[$i]->getHeaderText() . "</h2>";

@@ -44,6 +44,7 @@ class Quiz
             array_push(
                 $answerDataObjs,
                 new ImageAnswerData(
+                    $quizAnswers[$i]["answerID"],
                     $char++,
                     "./img/" . $quizAnswers[$i]["answer"] . ".png",
                     $quizAnswers[$i]["answerID"]
@@ -62,6 +63,7 @@ class Quiz
             array_push(
                 $answerDataObjs,
                 new TextAnswerData(
+                    $quizAnswers[$i]["answerID"],
                     $char++,
                     $quizAnswers[$i]["answer"],
                 )
@@ -102,6 +104,7 @@ class Quiz
                 if ($questionType == "img") 
                 {
                     return new ImageAnswerQuestion(
+                        $selectedQuestion["questionID"],
                         $questionNumber,
                         $selectedQuestion["question"],
                         $this->convertToImageAnswerData($quizAnswers)
@@ -110,6 +113,7 @@ class Quiz
                 else if ($questionType == "txt")
                 {
                     return new TextAnswerQuestion(
+                        $selectedQuestion["questionID"],
                         $questionNumber,
                         $selectedQuestion["question"],
                         $this->convertToTextAnswerData($quizAnswers)
