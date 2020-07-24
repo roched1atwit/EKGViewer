@@ -38,7 +38,7 @@ include_once "./db/quiz.php";
             if ($placeQuestion != null) {
                 $placeQuestion->output();
             }
-            
+
             $interpretQuestion = $quiz->getInterpretQuestion(4);
             if ($interpretQuestion != null) {
                 $interpretQuestion->output();

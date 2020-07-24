@@ -5,24 +5,24 @@ class ImageAnswerData
     private $_imgPath;
     private $_imgAlt;
 
-    function __construct($headerText, $imgPath, $imgAlt) 
+    function __construct($headerText, $imgPath, $imgAlt)
     {
         $this->_headerText = $headerText;
         $this->_imgPath = $imgPath;
         $this->_imgAlt = $imgAlt;
     }
 
-    function getHeaderText() 
+    function getHeaderText()
     {
         return $this->_headerText;
     }
 
-    function getImgPath() 
+    function getImgPath()
     {
         return $this->_imgPath;
     }
 
-    function getImgAlt() 
+    function getImgAlt()
     {
         return $this->_imgAlt;
     }

@@ -4,17 +4,17 @@ class TextAnswerData
     private $_headerText;
     private $_answerText;
 
-    function __construct($headerText, $answerText) 
+    function __construct($headerText, $answerText)
     {
         $this->_headerText = $headerText;
         $this->_answerText = $answerText;
     }
 
-    function getHeaderText() 
+    function getHeaderText()
     {
         return $this->_headerText;
     }
-    function getAnswerText() 
+    function getAnswerText()
     {
         return $this->_answerText;
     }

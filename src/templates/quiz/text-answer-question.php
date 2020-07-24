@@ -1,5 +1,5 @@
 <?php
-class TextAnswerQuestion 
+class TextAnswerQuestion
 {
     private $_questionNum;
     private $_questionText;
