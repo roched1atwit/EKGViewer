@@ -96,8 +96,7 @@ class Quiz
                     array_push($quizAnswers, $wrongAnswers[$key]);
                 }
 
-                // TODO: Randomly mix up answers
-                // Sort the answers, makes sure the correct answer isn't always at the first index
+                // Shuffle the answers
                 shuffle($quizAnswers);
 
                 if ($questionType == "img") 
