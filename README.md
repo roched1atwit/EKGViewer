@@ -36,7 +36,7 @@ End with an example of getting some data out of the system or using it for a lit
 ## Authors
 
 * **Anthony Morganelli** - Definitions and History Pages - GITHUB HERE
-* **Dan Roche** - How to Place and Test Results Pages - GITHUB HERE
+* **Dan Roche** - How to Place and Test Results Pages - [roched1atwit](https://github.com/roched1atwit)
 * **Hunter Wintle** - Home, How to Interpret, and Test Pages - [wintleh](https://github.com/wintleh)
 
 See also the list of [contributors](https://github.com/wintleh/EKGViewer/contributors) who participated in this project.
