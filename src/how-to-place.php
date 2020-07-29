@@ -81,6 +81,35 @@
                         the patient.
                     </p>
                 </p>
+
+                <br/><br/>
+
+                <header>
+                    <h2>After the Placement of EKG Leads</h2>
+                </header>
+
+                <p>
+                    <ul>
+                        <li>
+                            Connect the EKG leads to the electrodes.    
+                        </li>
+                        <li>
+                            Calibrate the EKG Machine.
+                        </li>
+                        <li>
+                            Obtain the EKG Trace.
+                        </li>
+                        <li>
+                            Remove electrodes and gel. Clean equipment and dispose of electrodes.
+                        </li>
+                        <li>
+                            Document the trace.
+                        </li>
+                        <li>
+                            Analyze the the trace and use the results to inform future medical care.
+                        </li>
+                    </ul>
+                </p>
             </article>
             <article>
                 <header>
@@ -88,7 +117,10 @@
                 </header>
                 <p>
                     <p>
-                        Placeholder
+                        The method below is the most common way to place EKG leads. It is known
+                        as the 12 Lead EKG Angle of Louis Method. Placing the leads to an EKG does
+                        require some medical knowledge, specifically knowing how to find intercostal
+                        spaces, some body lines, and the Angle of Louis.
                     </p>
                     <ul>
                         <li>
