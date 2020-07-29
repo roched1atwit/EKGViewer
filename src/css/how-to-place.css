@@ -34,6 +34,19 @@ h1 {
     background-color: #dddddd;
 }
 
+/* Need help styling the image */
+#ekg-pic img{
+    text-align: center;
+    display:block;
+    border-radius: 20px;
+}
+img {
+    border-radius: 50%;
+}
+
+/* end attempt to style image. I do not want 
+rounded edges on the picture, Just to algin it in the center */
+
 #page-info-container header {
     padding: 1vh 2vw 1vh 2vw;
     text-align: center;

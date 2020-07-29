@@ -83,7 +83,54 @@
                 </p>
             </article>
             <article>
-                hey
+                <header>
+                    <h2>12 Lead EKG Placement<h2>
+                </header>
+                <p>
+                    <p>
+                        Placeholder
+                    </p>
+                    <ul>
+                        <li>
+                            <b>V1:</b>Locate the sternal notch Angle of Louie at the second rib. Fil down
+                            to the 4th intercostal space. V1 is placed to the right of the sternal border.
+                        </li>
+                        <li>
+                            <b>V2:</b>Follow the same procedure as V1 to the 4th intercostal space. Place
+                            V2 to the left of the sternal border, opposite V1.
+                        </li>
+                        <li>
+                            <b>V4:</b> Place V4 before V3. V4 should be placed on the patient's
+                            left side, in the 5th intercostal space, on the midclavicular line. The midclavicular
+                            line is an imaginary line perpendicular to the middle of the patient's clavicle.
+                        </li>
+                        <li>
+                            <b>V3:</b> Place V3 directly between V2 and V4.
+                        </li>
+                        <li>
+                            <b>V6:</b>Placed over the 5th intercostal space at the mid axillary line. The mid axillary
+                                line is an imaginary line down the middle of the arm pit.
+                        </li>
+                        <li>
+                            <b>V5:</b> Place V5 directly between V4 and V6. 
+                        </li>
+                        <li>
+                            <b>RA:</b>Right arm. Place anywhere from the shoulder to the wrist.
+                        </li>
+                        <li>
+                            <b>LA:</b>Left arm. Place symmetrically to RA.
+                        </li>
+                        <li>
+                            <b>RL:</b>Right leg. Place anywhere from the ankle to upper thigh.
+                        </li>
+                        <li>
+                            <b>LA:</b>Left leg. Place symmetrically to RL.
+                        </li>
+                    </ul>
+                </p>
+                <figure id="ekg-pic">
+                    <img src="img/12-lead-ecg-placement-1.png" alt="12 Lead EKG Placement">
+                </figure>
             </article>
         </section>
     </section>
