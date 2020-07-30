@@ -14,18 +14,11 @@ include_once "./db/db_results.php";
 
 <body>
     <?php include "./templates/page-header.php" ?>
-    <section>
+    <section id="content-wrapper">
 
         <?php
 
             $db_res = new db_results();
-
-            $dumby_data = array(
-                1 => 2,
-                2 => 2,
-                3 => 4,
-                4 => 4
-            );
 
             $qcount = 0;
             $tot_cor = 0;
@@ -33,8 +26,7 @@ include_once "./db/db_results.php";
             $usr_answrs = [];
             $cor_answrs = [];
 
-            //foreach ($dumby_data as $quid => $usrans)
-            foreach ($_POST as $key => $value)
+            foreach ($_POST as $quid => $usrans)
             {
                 $q_info = $db_res->getQuestionInfo($quid);
                 
