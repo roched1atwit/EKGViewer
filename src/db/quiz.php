@@ -31,7 +31,7 @@ class Quiz
 
     function getPlaceQuestion($questionNumber)
     {
-        return $this->getQuestion($questionNumber, "how-to-place", "img");
+        return $this->getQuestion($questionNumber, "how-to-place", "txt");
     }
 
 
