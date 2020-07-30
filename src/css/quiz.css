@@ -5,7 +5,7 @@
 #content-wrapper h1 {
     font-size: 2rem;
     text-align: center;
-    padding: 3vh 0;
+    padding: 3vh 6vw;
     background-color: #eeeeee;
     border: solid #000000;
     border-width: 0.1rem 0;
@@ -29,14 +29,14 @@ form {
 
 .question-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 3vh;
 }
 
 .answer-wrapper {
     display: flex;
-    margin: 0 2vw;
+    margin: 0 5vw;
 }
 
 .answer-wrapper article {

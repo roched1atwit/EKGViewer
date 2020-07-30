@@ -22,7 +22,7 @@ CREATE TABLE Quiz_Answer (
 CREATE TABLE Quiz_Question (
     questionID      int             not null,
     category        int             not null,
-    question        varchar(128)    not null,
+    question        varchar(256)    not null,
     correct_answer  int             not null,
     constraint Quiz_Question_PK 
         primary key (questionID),
