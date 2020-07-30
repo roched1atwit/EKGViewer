@@ -16,7 +16,7 @@
                 <h1>Welcome to EKGViewer</h1>
             </header>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                EKGViewer is an online platform for learning about EKG. Check out the categories below to learn more about EKG.
             </p>
         </article>
         <section id="page-info-container">
@@ -55,7 +55,7 @@
                     <h2>How To Interpret EKG Signals</h2>
                 </header>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Knowing how to read EKG signals is an important skill. Learn about six different kinds of signals and the key characteristics of them.
                     <br /><br />
                     Learn more <a href="./how-to-interpret.php">here.</a>
                 </p>
@@ -65,7 +65,7 @@
                     <h2>Quiz</h2>
                 </header>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Try our quiz to see how much you have learned about EKG.
                     <br /><br />
                     Test your knowledge <a href="./quiz.php">here.</a>
                 </p>

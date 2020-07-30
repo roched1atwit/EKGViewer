@@ -3,7 +3,7 @@ article h1, article  h2 {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 
 h2 {
@@ -28,6 +28,7 @@ article {
     border-color: #3f3f3f;
     border-radius: 0.5rem;
     background-color: #dddddd;
+    font-size: 1.3rem;
 }
 
 #welcome-wrapper header {
