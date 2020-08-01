@@ -156,8 +156,9 @@
                             <b>RL:</b>Right leg. Place anywhere from the ankle to upper thigh.
                         </li>
                         <li>
-                            <b>LA:</b>Left leg. Place symmetrically to RL.
+                            <b>LL:</b>Left leg. Place symmetrically to RL.
                         </li>
+
                     </ul>
                 </p>
                 <figure id="ekg-pic">
