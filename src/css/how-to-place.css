@@ -73,6 +73,10 @@
     font-size: 140%;
 }
 
+#page-references article {
+    padding: 1vh 2vw 2.5vh 2vw;
+}
+
 p {
     padding: 1vh 2vw 4vh 2vw;
 }
