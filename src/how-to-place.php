@@ -170,7 +170,6 @@
                 <header>
                     <h2>References</h2>
                 </header>
-                <p>
                     <ul>
                         <li>
                             <a href="https://www.ausmed.com/cpd/articles/ecg-lead-placement">https://www.ausmed.com/cpd/articles/ecg-lead-placement</a>
@@ -179,7 +178,7 @@
                             <a href="https://www.primemedicaltraining.com/12-lead-ecg-placement/">https://www.primemedicaltraining.com/12-lead-ecg-placement/<a>
                         </li>
                     </ul>
-                </p>
+
             </article>
         </section>
     </section>
