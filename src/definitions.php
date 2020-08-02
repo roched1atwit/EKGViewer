@@ -37,6 +37,10 @@
                 </ul>
             </div>
         </section>
+        <h1>Works Cited</h1>
+        <p class="citation">
+            EKGs. BarCharts, Inc., 2012. EBSCOhost, search.ebscohost.com/login.aspx?direct=true&db=cat05470a&AN=wit.2359116&site=eds-live&scope=site.
+        </p>
     </section>
     <?php include "./templates/page-footer.php" ?>
 </body>
