@@ -25,3 +25,9 @@ b {
 .definitions li {
     padding: 10px;
 }
+
+p.citation {
+    padding: 3vh 2vw;
+    font-size: 1.2rem;
+    text-align: center;
+}
