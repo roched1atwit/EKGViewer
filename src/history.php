@@ -25,7 +25,12 @@
                 </ul>
             </div>
         </section>
+        <h1>Works Cited</h1>
+        <p class="citation">
+            Rubin, Andrew. “History of the EKG Machine.” Health Beat, 24 Aug. 2017, jamaicahospital.org/newsletter/history-of-the-ekg-machine/.
+        </p>
     </section>
+    
     <?php include "./templates/page-footer.php" ?>
 </body>
 
