@@ -55,4 +55,4 @@ These instructions will get you a copy of the project up and running on your loc
 See also the list of [contributors](https://github.com/wintleh/EKGViewer/contributors) who participated in this project.
 
 ---
-Created for Web Development (COMP-4650) at Wentworth Institue of Technology - Summer 2020
+Created for Web Development (COMP-4650) at Wentworth Institute of Technology - Summer 2020
