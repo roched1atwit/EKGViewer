@@ -5,7 +5,7 @@
 #content-wrapper h1 {
     font-size: 2rem;
     text-align: center;
-    padding: 3vh 0;
+    padding: 3vh 6vw;
     background-color: #eeeeee;
     border: solid #000000;
     border-width: 0.1rem 0;
@@ -29,17 +29,18 @@ form {
 
 .question-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 3vh;
 }
 
 .answer-wrapper {
     display: flex;
+    margin: 0 5vw;
 }
 
 .answer-wrapper article {
-    margin: 2vh 0;
+    margin: 2vh 1vw;
     border: 0.1rem solid #000000;
     border-radius: 0.5rem;
     overflow: hidden;
@@ -64,8 +65,9 @@ form {
     padding: 1vh 1vw;
 }
 
-.answer-wrapper article figcaption {
-    padding: 1vh 0;
+.answer-wrapper article img {
+    width: 100%;
+    height: auto;
 }
 
 .answer-wrapper article p {

@@ -52,6 +52,8 @@ section.signal-type-wrapper {
 .rhythm-info img {
     display: block;
     margin: auto;
+    width: 80%;
+    height: auto;
 }
 
 .rhythm-info figcaption {

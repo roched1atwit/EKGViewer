@@ -1,8 +1,9 @@
 <?php
-include "./templates/quiz/text-answer-data.php";
-include "./templates/quiz/text-answer-question.php";
-include "./templates/quiz/image-answer-data.php";
-include "./templates/quiz/image-answer-question.php";
+include_once "./templates/quiz/text-answer-data.php";
+include_once "./templates/quiz/text-answer-question.php";
+include_once "./templates/quiz/image-answer-data.php";
+include_once "./templates/quiz/image-answer-question.php";
+include_once "./db/quiz.php";
 ?>
 
 <!DOCTYPE html>
@@ -19,93 +20,34 @@ include "./templates/quiz/image-answer-question.php";
 <body>
     <?php include "./templates/page-header.php" ?>
     <section id="content-wrapper">
-        <form method="POST" action="" id="quiz-form">
-            <?php
-            (new TextAnswerQuestion(
-                "1",
-                "History Question",
-                array(
-                    new TextAnswerData("A", "ANSWER A"),
-                    new TextAnswerData("B", "ANSWER B"),
-                    new TextAnswerData("C", "ANSWER C"),
-                    new TextAnswerData("D", "ANSWER D")
-                )
-            ))->output();
-            (new TextAnswerQuestion(
-                "2",
-                "Definition Question",
-                array(
-                    new TextAnswerData("A", "ANSWER A"),
-                    new TextAnswerData("B", "ANSWER B"),
-                    new TextAnswerData("C", "ANSWER C"),
-                    new TextAnswerData("D", "ANSWER D")
-                )
-            ))->output();
-            (new ImageAnswerQuestion(
-                "3",
-                "How To Place Question",
-                array(
-                    new ImageAnswerData(
-                        "A",
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
-                        "IMG ALT",
-                        "EXPLAIN WAVE FORM"
-                    ),
-                    new ImageAnswerData(
-                        "B",
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
-                        "IMG ALT",
-                        "EXPLAIN WAVE FORM"
-                    ),
-                    new ImageAnswerData(
-                        "C",
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
-                        "IMG ALT",
-                        "EXPLAIN WAVE FORM"
-                    ),
-                    new ImageAnswerData(
-                        "D",
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
-                        "IMG ALT",
-                        "EXPLAIN WAVE FORM"
-                    )
-                )
-            ))->output();
-            (new ImageAnswerQuestion(
-                "4",
-                "Which is an example of WAVE FORM?",
-                array(
-                    new ImageAnswerData(
-                        "A",
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
-                        "IMG ALT",
-                        "EXPLAIN WAVE FORM"
-                    ),
-                    new ImageAnswerData(
-                        "B",
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
-                        "IMG ALT",
-                        "EXPLAIN WAVE FORM"
-                    ),
-                    new ImageAnswerData(
-                        "C",
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
-                        "IMG ALT",
-                        "EXPLAIN WAVE FORM"
-                    ),
-                    new ImageAnswerData(
-                        "D",
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SinusRhythmLabels.svg/280px-SinusRhythmLabels.svg.png",
-                        "IMG ALT",
-                        "EXPLAIN WAVE FORM"
-                    )
-                )
-            ))->output();
-            ?>
-            <input type="submit" value="Submit" class="form-button">
-            <input type="reset" value="Clear" class="form-button">
-            <h2 id="submission-error-message"></h2>
-        </form>
+        <?php
+        $quiz = new Quiz();
+
+        $historyQuestion    = $quiz->getHistoryQuestion(1);
+        $definitionQuestion = $quiz->getDefinitionQuestion(2);
+        $placeQuestion      = $quiz->getPlaceQuestion(3);
+        $interpretQuestion  = $quiz->getInterpretQuestion(4);
+
+        // Ensure that all questions were generated successfully
+        if (
+            $historyQuestion    != null &&
+            $definitionQuestion != null &&
+            $placeQuestion      != null &&
+            $interpretQuestion  != null
+        ) {
+            echo "<form method='POST' action='./results.php' id='quiz-form'>";
+            $historyQuestion->output();
+            $definitionQuestion->output();
+            $placeQuestion->output();
+            $interpretQuestion->output();
+            echo "<input type='submit' value='Submit' class='form-button'>";
+            echo "<input type='reset' value='Clear' class='form-button'>";
+            echo "<h2 id='submission-error-message'></h2>";
+            echo "</form>";
+        } else {
+            echo "<h1>Error loading questions: Please try again later</h1>";
+        }
+        ?>
     </section>
     <?php include "./templates/page-footer.php" ?>
 </body>
