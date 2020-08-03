@@ -25,7 +25,7 @@
                     <h2>History</h2>
                 </header>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    This history of EKG's easily dates back to the Late 1700's, but many significant discoveries helped make it the device it is today.
                     <br /><br />
                     Learn more <a href="./history.php">here.</a>
                 </p>
@@ -35,7 +35,7 @@
                     <h2>Definitions</h2>
                 </header>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Understanding EKG's may come tricky without knowing the terms involed. Learning the talk of the trade is worth the while.
                     <br /><br />
                     Learn more <a href="./definitions.php">here.</a>
                 </p>
